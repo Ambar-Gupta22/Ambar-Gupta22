@@ -90,8 +90,6 @@
 <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api?username=Ambar-Gupta22&show_icons=true&theme=tokyonight&hide_border=true&bg_color=1a1b27&include_all_commits=true&rank_icon=github" alt="GitHub stats" />
 <img height="170" src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=Ambar-Gupta22&layout=compact&theme=tokyonight&hide_border=true&bg_color=1a1b27&langs_count=8" alt="top languages" />
 
-<img src="https://streak-stats.demolab.com?user=Ambar-Gupta22&theme=tokyonight&hide_border=true&background=1A1B27" alt="streak stats" />
-
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ambar-Gupta22&theme=tokyo-night&hide_border=true&bg_color=1a1b27&color=70a5fd&line=bf91f3&point=c0caf5&area=true" width="95%" alt="activity graph" />
 
 </div>
