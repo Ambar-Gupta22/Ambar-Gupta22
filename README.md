@@ -5,7 +5,7 @@
 
 <!-- ══════════════════════ TYPING ANIMATION ══════════════════════ -->
 <a href="https://github.com/Ambar-Gupta22/corvus">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=70A5FD&center=true&vCenter=true&width=620&lines=Systems+%26+Backend+Engineer;Building+corvus+%E2%80%94+a+C%2B%2B+AI+agent+runtime;1000%2B+LeetCode+problems+%C2%B7+Top+11%25+global;Distributed+systems+%C2%B7+MCP+%C2%B7+Low-latency" alt="typing animation" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=70A5FD&center=true&vCenter=true&width=620&lines=Systems+%26+Backend+Engineer;Building+corvus+%E2%80%94+a+C%2B%2B+AI+agent+runtime;1000%2B+LeetCode+problems+%C2%B7+Top+8%25+global;Distributed+systems+%C2%B7+MCP+%C2%B7+Low-latency" alt="typing animation" />
 </a>
 
 <br/>
@@ -33,7 +33,7 @@
 - ⚙️ Distributed backends: event-driven microservices, durable queues, real-time observability — built an **8-service** fault-tolerant system from scratch
 - 💼 Recently: Full-Stack Engineering Intern @ **Dukanify** — multi-tenant SaaS edge routing, atomic billing, zero-downtime HTTPS automation
 - 🎓 B.Tech ECE @ **NIT Surat (SVNIT)**, Class of 2026
-- 🧩 **1000+** LeetCode problems · **1796** contest rating · **Top 11%** globally
+- 🧩 **1000+** LeetCode problems · **1800** contest rating · **Top 8%** globally
 - 📫 Reach me: **gvansh2211@gmail.com**
 
 <br/>
@@ -110,8 +110,8 @@
 <br/><br/>
 
 <img src="https://img.shields.io/badge/Problems_Solved-1000%2B-70a5fd?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=1a1b27" alt="problems solved" />
-<img src="https://img.shields.io/badge/Contest_Rating-1796-bf91f3?style=for-the-badge&labelColor=1a1b27" alt="contest rating" />
-<img src="https://img.shields.io/badge/Global_Ranking-Top_11%25-38bdae?style=for-the-badge&labelColor=1a1b27" alt="global ranking" />
+<img src="https://img.shields.io/badge/Contest_Rating-1800-bf91f3?style=for-the-badge&labelColor=1a1b27" alt="contest rating" />
+<img src="https://img.shields.io/badge/Global_Ranking-Top_8%25-38bdae?style=for-the-badge&labelColor=1a1b27" alt="global ranking" />
 <img src="https://img.shields.io/badge/Max_Streak-145_days-ff9e64?style=for-the-badge&labelColor=1a1b27" alt="max streak" />
 
 <br/><br/>
