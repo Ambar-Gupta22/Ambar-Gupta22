@@ -393,7 +393,7 @@ function terminalCard(d, st, top) {
     ["Stack", "C++ · TypeScript · Node · Postgres · Redis"],
     ["Infra", "Docker · RabbitMQ · Nginx · Prometheus"],
     ["Education", "B.Tech ECE, NIT Surat (SVNIT) '26"],
-    ["LeetCode", "1000+ solved · 1800 rating · top 8%"],
+    ["LeetCode", "1100+ solved · 1800+ rating · top 8%"],
     ["Langs", top.slice(0, 3).map((l) => l.name).join(" · ")],
     ["Contribs", `${fmt(d.year.totalContributions)} last year · ${st.current}d streak 🔥`],
     ["Uptime", `${years} years on GitHub`],
@@ -434,6 +434,90 @@ ${palette}
 @keyframes blink{0%{opacity:1}50%{opacity:0}}`);
 }
 
+
+// ───────────────────────────── leetcode ─────────────────────────────
+
+const LC_USER = process.env.LC_USER || "Ambar_Gupta";
+
+async function fetchLeetCode() {
+  const res = await fetch("https://leetcode.com/graphql", {
+    method: "POST",
+    headers: { "Content-Type": "application/json", Referer: "https://leetcode.com", "User-Agent": "Mozilla/5.0 profile-cards" },
+    body: JSON.stringify({
+      query: `query($u:String!){
+        matchedUser(username:$u){ submitStatsGlobal{acSubmissionNum{difficulty count}} profile{ranking} }
+        userContestRanking(username:$u){ rating globalRanking topPercentage attendedContestsCount }
+        allQuestionsCount{ difficulty count }
+      }`,
+      variables: { u: LC_USER },
+    }),
+  });
+  const { data } = await res.json();
+  if (!data?.matchedUser) throw new Error("LeetCode user not found");
+  const by = (arr, k) => Object.fromEntries(arr.map((x) => [x.difficulty, x.count]))[k];
+  const ac = data.matchedUser.submitStatsGlobal.acSubmissionNum, all = data.allQuestionsCount;
+  return {
+    solved: by(ac, "All"),
+    diff: ["Easy", "Medium", "Hard"].map((k) => ({ k, n: by(ac, k), of: by(all, k) })),
+    ranking: data.matchedUser.profile.ranking,
+    contest: data.userContestRanking,
+  };
+}
+
+function leetcodeCard(lc) {
+  const W = 850, H = 210, total = lc.diff.reduce((s, x) => s + x.n, 0) || 1;
+  const cols = { Easy: C.teal, Medium: C.yellow, Hard: C.red };
+  // segmented ring
+  const R = 58, circ = 2 * Math.PI * R, gap = 6;
+  let off = 0;
+  const arcs = lc.diff
+    .map((x, i) => {
+      const len = Math.max(0, (x.n / total) * circ - gap);
+      const a = `<circle r="${R}" stroke="${cols[x.k]}" stroke-width="9" stroke-linecap="round" fill="none" transform="rotate(-90)"
+        stroke-dasharray="0 ${circ}" style="--d:${len.toFixed(1)} ${circ.toFixed(1)};--o:${(-off).toFixed(1)};stroke-dashoffset:${(-off).toFixed(1)};animation:arc 1s ease-out ${300 + i * 250}ms forwards"/>`;
+      off += (x.n / total) * circ;
+      return a;
+    })
+    .join("");
+  const bars = lc.diff
+    .map((x, i) => {
+      const y = 70 + i * 44, w = 260, f = Math.max(4, (x.n / x.of) * w);
+      return `<g class="fade" style="animation-delay:${200 + i * 150}ms">
+  <text x="200" y="${y}" class="lbl" style="font-size:13px;fill:${cols[x.k]};font-weight:600">${x.k}</text>
+  <text x="${200 + w}" y="${y}" text-anchor="end" class="val">${x.n}<tspan class="dim" style="font-weight:400"> / ${x.of}</tspan></text>
+  <rect x="200" y="${y + 9}" width="${w}" height="7" rx="3.5" fill="${C.panel}"/>
+  <rect x="200" y="${y + 9}" width="${f.toFixed(1)}" height="7" rx="3.5" fill="${cols[x.k]}"/></g>`;
+    })
+    .join("");
+  const c = lc.contest;
+  const kv = c
+    ? [
+        ["Contest rating", Math.round(c.rating).toLocaleString("en-US"), C.purple],
+        ["Top", `${c.topPercentage.toFixed(2)}%`, C.teal],
+        ["Contest rank", c.globalRanking.toLocaleString("en-US"), C.blue],
+        ["Contests", c.attendedContestsCount, C.orange],
+      ]
+    : [];
+  const right = kv
+    .map(([k, v, col], i) => {
+      const x = 525 + (i % 2) * 160, y = 82 + Math.floor(i / 2) * 64;
+      return `<g class="fade" style="animation-delay:${400 + i * 120}ms"><text x="${x}" y="${y}" style="font-size:24px;font-weight:800;fill:${col}">${esc(v)}</text><text x="${x}" y="${y + 20}" class="lbl" style="font-size:12px">${k}</text></g>`;
+    })
+    .join("");
+  return frame(W, H,
+    `<text x="25" y="33" class="title">LeetCode · ${esc(LC_USER)}</text>
+<text x="${W - 25}" y="33" text-anchor="end" class="lbl" style="font-size:12px">profile rank <tspan class="val" style="font-size:12px">#${lc.ranking.toLocaleString("en-US")}</tspan></text>
+<g transform="translate(100 122)">
+  <circle r="${R}" stroke="${C.panel}" stroke-width="9" fill="none"/>${arcs}
+  <text y="6" text-anchor="middle" style="font-size:30px;font-weight:800;fill:${C.fg}">${lc.solved}</text>
+  <text y="26" text-anchor="middle" class="lbl" style="font-size:12px">solved</text>
+</g>
+${bars}
+<line x1="500" x2="500" y1="58" y2="185" stroke="${C.panel}"/>
+${right}`,
+    `@keyframes arc{to{stroke-dasharray:var(--d)}}`);
+}
+
 // ───────────────────────────── main ─────────────────────────────
 
 const d = await fetchData();
@@ -447,5 +531,13 @@ const out = {
   "flagship.svg": flagshipCard(d),
   "terminal.svg": terminalCard(d, st, d.langs),
 };
+try {
+  out["leetcode.svg"] = leetcodeCard(await fetchLeetCode());
+} catch (e) {
+  // LeetCode occasionally blocks CI runners; keep the last good card instead of publishing a hole.
+  console.warn(`leetcode: ${e.message} — reusing previous card`);
+  const prev = await fetch(`https://raw.githubusercontent.com/${USER}/${USER}/output/leetcode.svg`);
+  if (prev.ok) out["leetcode.svg"] = await prev.text();
+}
 for (const [f, svg] of Object.entries(out)) writeFileSync(`${OUT}/${f}`, svg);
 console.log(`wrote ${Object.keys(out).length} cards · ${d.totalContrib} all-time contributions · streak ${st.current}/${st.longest}`);

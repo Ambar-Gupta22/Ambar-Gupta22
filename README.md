@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0%3A1a1b27%2C50%3A24283b%2C100%3A414868&height=210&section=header&text=Ambar%20Gupta&fontSize=64&fontColor=c0caf5&animation=fadeIn&fontAlignY=32&desc=SDE%20%40%20ICICI%20%C2%B7%20Systems%20%C2%B7%20C%2B%2B%20%C2%B7%20Distributed%20Backends&descSize=20&descAlignY=54&descAlign=50" width="100%" alt="Ambar Gupta — SDE @ ICICI" />
 
 <a href="https://github.com/Ambar-Gupta22/corvus">
-  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=70A5FD&center=true&vCenter=true&width=640&lines=Software+Development+Engineer+%40+ICICI;Building+corvus+%E2%80%94+a+C%2B%2B+AI+agent+runtime;Distributed+systems+%C2%B7+MCP+%C2%B7+Low-latency;1000%2B+LeetCode+%C2%B7+1800+rating+%C2%B7+Top+8%25" alt="typing animation" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=70A5FD&center=true&vCenter=true&width=640&lines=Software+Development+Engineer+%40+ICICI;Building+corvus+%E2%80%94+a+C%2B%2B+AI+agent+runtime;Distributed+systems+%C2%B7+MCP+%C2%B7+Low-latency;1100%2B+LeetCode+%C2%B7+1800%2B+rating+%C2%B7+Top+8%25" alt="typing animation" />
 </a>
 
 <p>
@@ -32,7 +32,7 @@ struct Engineer {
     std::array<std::string_view, 4> focus = {
         "distributed backends", "low-latency systems", "LLM agents / MCP", "fintech at scale"};
     std::string_view edu      = "B.Tech ECE, NIT Surat (SVNIT) '26";
-    std::string_view dsa      = "1000+ LeetCode · 1800 contest rating · top 8% globally";
+    std::string_view dsa      = "1100+ LeetCode · 1800+ contest rating · top 8% globally";
 
     [[nodiscard]] bool open_to(std::string_view what) const noexcept {
         return what == "systems collabs" || what == "OSS contributions" || what == "hard problems";
@@ -123,15 +123,8 @@ flowchart LR
 <div align="center">
 
 <a href="https://leetcode.com/u/Ambar_Gupta">
-  <img src="https://leetcard.jacoblin.cool/Ambar_Gupta?theme=dark&font=Fira%20Code&ext=contest" alt="LeetCode stats" />
+  <img src="https://raw.githubusercontent.com/Ambar-Gupta22/Ambar-Gupta22/output/leetcode.svg" width="100%" alt="LeetCode stats: problems solved and contest rating" />
 </a>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Problems_Solved-1000%2B-70a5fd?style=for-the-badge&logo=leetcode&logoColor=white&labelColor=1a1b27" alt="problems solved" />
-<img src="https://img.shields.io/badge/Contest_Rating-1800-bf91f3?style=for-the-badge&labelColor=1a1b27" alt="contest rating" />
-<img src="https://img.shields.io/badge/Global_Ranking-Top_8%25-38bdae?style=for-the-badge&labelColor=1a1b27" alt="global ranking" />
-<img src="https://img.shields.io/badge/Max_Streak-145_days-ff9e64?style=for-the-badge&labelColor=1a1b27" alt="max streak" />
 
 </div>
 
