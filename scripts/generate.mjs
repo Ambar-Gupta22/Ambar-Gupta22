@@ -189,8 +189,8 @@ function statsCard(d, st) {
     ["commit", `Commits (${new Date().getUTCFullYear()})`, d.commitsThisYear, C.blue],
     ["grid", "All-time contributions", d.totalContrib, C.teal],
     ["pr", "Pull requests", d.prs, C.purple],
-    ["issue", "Issues", d.issues, C.orange],
-    ["repo", "Contributed to", d.contributedTo, C.green],
+    ["flame", "Active days (last year)", d.year.weeks.flatMap((w) => w.contributionDays).filter((x) => x.contributionCount > 0).length, C.orange],
+    ["repo", "Public repositories", d.repoCount, C.green],
   ];
   const body = rows
     .map(([ic, label, v, col], i) => {
