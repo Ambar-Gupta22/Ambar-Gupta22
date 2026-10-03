@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="350" height="200" viewBox="0 0 350 200" fill="none" role="img">
+<style>
+  text{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;fill:#c0caf5}
+  .mono{font-family:'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace}
+  .title{font-size:17px;font-weight:600;fill:#70a5fd}
+  .lbl{font-size:13px;fill:#a9b1d6}
+  .val{font-size:13px;font-weight:700;fill:#c0caf5}
+  .dim{fill:#565f89}
+  .fade{opacity:0;animation:fade .5s ease-out forwards}
+  @keyframes fade{to{opacity:1}}
+  
+</style>
+<rect x="0.5" y="0.5" rx="10" width="349" height="199" fill="#1a1b27" stroke="#414868" stroke-opacity=".6"/>
+<text x="25" y="33" class="title">Most Used Languages</text>
+<mask id="m"><rect x="25" y="48" width="300" height="8" rx="4" fill="#fff"/></mask>
+<g mask="url(#m)"><rect x="25.0" y="48" width="194.4" height="8" fill="#f1e05a"/><rect x="219.4" y="48" width="49.2" height="8" fill="#00B4AB"/><rect x="268.7" y="48" width="40.7" height="8" fill="#f34b7d"/><rect x="309.4" y="48" width="10.4" height="8" fill="#DA3434"/><rect x="319.8" y="48" width="2.0" height="8" fill="#384d54"/><rect x="321.8" y="48" width="2.0" height="8" fill="#3572A5"/><rect x="323.8" y="48" width="2.0" height="8" fill="#012456"/><rect x="325.8" y="48" width="2.0" height="8" fill="#F05138"/></g>
+<g class="fade" style="animation-delay:200ms"><circle cx="30" cy="78" r="5" fill="#f1e05a"/><text x="41" y="82" class="lbl" style="font-size:12px">JavaScript <tspan class="dim">64.8%</tspan></text></g>
+<g class="fade" style="animation-delay:290ms"><circle cx="185" cy="78" r="5" fill="#00B4AB"/><text x="196" y="82" class="lbl" style="font-size:12px">Dart <tspan class="dim">16.4%</tspan></text></g>
+<g class="fade" style="animation-delay:380ms"><circle cx="30" cy="103" r="5" fill="#f34b7d"/><text x="41" y="107" class="lbl" style="font-size:12px">C++ <tspan class="dim">13.6%</tspan></text></g>
+<g class="fade" style="animation-delay:470ms"><circle cx="185" cy="103" r="5" fill="#DA3434"/><text x="196" y="107" class="lbl" style="font-size:12px">CMake <tspan class="dim">3.5%</tspan></text></g>
+<g class="fade" style="animation-delay:560ms"><circle cx="30" cy="128" r="5" fill="#384d54"/><text x="41" y="132" class="lbl" style="font-size:12px">Dockerfile <tspan class="dim">0.6%</tspan></text></g>
+<g class="fade" style="animation-delay:650ms"><circle cx="185" cy="128" r="5" fill="#3572A5"/><text x="196" y="132" class="lbl" style="font-size:12px">Python <tspan class="dim">0.6%</tspan></text></g>
+<g class="fade" style="animation-delay:740ms"><circle cx="30" cy="153" r="5" fill="#012456"/><text x="41" y="157" class="lbl" style="font-size:12px">PowerShell <tspan class="dim">0.3%</tspan></text></g>
+<g class="fade" style="animation-delay:830ms"><circle cx="185" cy="153" r="5" fill="#F05138"/><text x="196" y="157" class="lbl" style="font-size:12px">Swift <tspan class="dim">0.3%</tspan></text></g>
+</svg>
