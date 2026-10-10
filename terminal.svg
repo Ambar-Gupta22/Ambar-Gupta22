@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="402" viewBox="0 0 850 402" fill="none" role="img">
+<style>
+  text{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;fill:#c0caf5}
+  .mono{font-family:'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace}
+  .title{font-size:17px;font-weight:600;fill:#70a5fd}
+  .lbl{font-size:13px;fill:#a9b1d6}
+  .val{font-size:13px;font-weight:700;fill:#c0caf5}
+  .dim{fill:#565f89}
+  .fade{opacity:0;animation:fade .5s ease-out forwards}
+  @keyframes fade{to{opacity:1}}
+  .type{clip-path:inset(0 100% 0 0);animation:type 1s steps(21) .2s forwards}
+@keyframes type{to{clip-path:inset(0 0 0 0)}}
+.ln{opacity:0;animation:fade .25s ease-out forwards}
+.blink{opacity:0;animation:blink 1s steps(1) 3.12s infinite}
+@keyframes blink{0%{opacity:1}50%{opacity:0}}
+</style>
+<rect x="0.5" y="0.5" rx="10" width="849" height="401" fill="#1a1b27" stroke="#414868" stroke-opacity=".6"/>
+<rect x="0.5" y="0.5" width="849" height="34" rx="10" fill="#24283b"/><rect x="0.5" y="24" width="849" height="11" fill="#24283b"/>
+<circle cx="22" cy="17" r="6" fill="#f7768e"/><circle cx="42" cy="17" r="6" fill="#e0af68"/><circle cx="62" cy="17" r="6" fill="#9ece6a"/>
+<text x="425" y="22" text-anchor="middle" class="mono" style="font-size:12px;fill:#565f89">ambar@icici: ~ — zsh — 85×20</text>
+<text x="24" y="66" class="mono" style="font-size:14px"><tspan fill="#9ece6a">➜</tspan> <tspan fill="#38bdae">~</tspan> <tspan fill="#c0caf5" class="type">neofetch --user ambar</tspan></text>
+<text x="34" y="106" class="mono ln" style="font-size:14px;fill:#70a5fd;white-space:pre;animation-delay:1200ms" xml:space="preserve">        .--.        </text>
+<text x="34" y="126" class="mono ln" style="font-size:14px;fill:#70a5fd;white-space:pre;animation-delay:1260ms" xml:space="preserve">       /  o \__     </text>
+<text x="34" y="146" class="mono ln" style="font-size:14px;fill:#70a5fd;white-space:pre;animation-delay:1320ms" xml:space="preserve">      |    ___/&gt;    </text>
+<text x="34" y="166" class="mono ln" style="font-size:14px;fill:#bf91f3;white-space:pre;animation-delay:1380ms" xml:space="preserve">      |   (         </text>
+<text x="34" y="186" class="mono ln" style="font-size:14px;fill:#bf91f3;white-space:pre;animation-delay:1440ms" xml:space="preserve">     /    \\        </text>
+<text x="34" y="206" class="mono ln" style="font-size:14px;fill:#bf91f3;white-space:pre;animation-delay:1500ms" xml:space="preserve">    /  /\  \\       </text>
+<text x="34" y="226" class="mono ln" style="font-size:14px;fill:#bf91f3;white-space:pre;animation-delay:1560ms" xml:space="preserve">   /  /  \  \\      </text>
+<text x="34" y="246" class="mono ln" style="font-size:14px;fill:#bf91f3;white-space:pre;animation-delay:1620ms" xml:space="preserve">  (__/    \__)\     </text>
+<text x="34" y="266" class="mono ln" style="font-size:14px;fill:#bf91f3;white-space:pre;animation-delay:1680ms" xml:space="preserve">     ||    ||       </text>
+<text x="34" y="286" class="mono ln" style="font-size:14px;fill:#bf91f3;white-space:pre;animation-delay:1740ms" xml:space="preserve">    _||_  _||_      </text>
+<text x="290" y="92" class="mono ln" style="font-size:14px;animation-delay:1300ms"><tspan fill="#bf91f3" font-weight="700">ambar</tspan><tspan fill="#c0caf5">@</tspan><tspan fill="#70a5fd" font-weight="700">icici</tspan></text>
+<text x="290" y="112" class="mono ln" style="font-size:14px;animation-delay:1410ms"><tspan fill="#565f89">──────────────────────────────</tspan></text>
+<text x="290" y="132" class="mono ln" style="font-size:14px;animation-delay:1520ms"><tspan fill="#70a5fd" font-weight="700">Role</tspan><tspan fill="#c0caf5">: Software Development Engineer @ ICICI</tspan></text>
+<text x="290" y="152" class="mono ln" style="font-size:14px;animation-delay:1630ms"><tspan fill="#70a5fd" font-weight="700">Building</tspan><tspan fill="#c0caf5">: corvus — C++17 AI agent runtime</tspan></text>
+<text x="290" y="172" class="mono ln" style="font-size:14px;animation-delay:1740ms"><tspan fill="#70a5fd" font-weight="700">Stack</tspan><tspan fill="#c0caf5">: C++ · TypeScript · Node · Postgres · Redis</tspan></text>
+<text x="290" y="192" class="mono ln" style="font-size:14px;animation-delay:1850ms"><tspan fill="#70a5fd" font-weight="700">Infra</tspan><tspan fill="#c0caf5">: Docker · RabbitMQ · Nginx · Prometheus</tspan></text>
+<text x="290" y="212" class="mono ln" style="font-size:14px;animation-delay:1960ms"><tspan fill="#70a5fd" font-weight="700">Education</tspan><tspan fill="#c0caf5">: B.Tech ECE, NIT Surat (SVNIT) &#39;26</tspan></text>
+<text x="290" y="232" class="mono ln" style="font-size:14px;animation-delay:2070ms"><tspan fill="#70a5fd" font-weight="700">LeetCode</tspan><tspan fill="#c0caf5">: 1100+ solved · 1800+ rating · top 8%</tspan></text>
+<text x="290" y="252" class="mono ln" style="font-size:14px;animation-delay:2180ms"><tspan fill="#70a5fd" font-weight="700">Langs</tspan><tspan fill="#c0caf5">: JavaScript · C++ · Dart</tspan></text>
+<text x="290" y="272" class="mono ln" style="font-size:14px;animation-delay:2290ms"><tspan fill="#70a5fd" font-weight="700">Contribs</tspan><tspan fill="#c0caf5">: 115 last year · 0d streak 🔥</tspan></text>
+<text x="290" y="292" class="mono ln" style="font-size:14px;animation-delay:2400ms"><tspan fill="#70a5fd" font-weight="700">Uptime</tspan><tspan fill="#c0caf5">: 3.2 years on GitHub</tspan></text>
+<text x="290" y="312" class="mono ln" style="font-size:14px;animation-delay:2510ms"><tspan fill="#70a5fd" font-weight="700">Last push</tspan><tspan fill="#c0caf5">: docs: link memory v2 commit in… (2d ago)</tspan></text>
+<rect x="290" y="328" width="24" height="14" fill="#f7768e" class="ln" style="animation-delay:2620ms"/><rect x="316" y="328" width="24" height="14" fill="#ff9e64" class="ln" style="animation-delay:2620ms"/><rect x="342" y="328" width="24" height="14" fill="#e0af68" class="ln" style="animation-delay:2620ms"/><rect x="368" y="328" width="24" height="14" fill="#9ece6a" class="ln" style="animation-delay:2620ms"/><rect x="394" y="328" width="24" height="14" fill="#38bdae" class="ln" style="animation-delay:2620ms"/><rect x="420" y="328" width="24" height="14" fill="#70a5fd" class="ln" style="animation-delay:2620ms"/><rect x="446" y="328" width="24" height="14" fill="#bf91f3" class="ln" style="animation-delay:2620ms"/><rect x="472" y="328" width="24" height="14" fill="#c0caf5" class="ln" style="animation-delay:2620ms"/>
+<text x="24" y="368" class="mono ln" style="font-size:14px;animation-delay:2820ms"><tspan fill="#9ece6a">➜</tspan> <tspan fill="#38bdae">~</tspan> <tspan fill="#565f89">./corvus run --agent "hire-ambar"</tspan></text>
+<rect x="335.90999999999997" y="355" width="9" height="17" fill="#c0caf5" class="blink"/>
+</svg>

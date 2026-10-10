@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="210" viewBox="0 0 850 210" fill="none" role="img">
+<style>
+  text{font-family:'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;fill:#c0caf5}
+  .mono{font-family:'JetBrains Mono', 'Fira Code', Consolas, 'Courier New', monospace}
+  .title{font-size:17px;font-weight:600;fill:#70a5fd}
+  .lbl{font-size:13px;fill:#a9b1d6}
+  .val{font-size:13px;font-weight:700;fill:#c0caf5}
+  .dim{fill:#565f89}
+  .fade{opacity:0;animation:fade .5s ease-out forwards}
+  @keyframes fade{to{opacity:1}}
+  @keyframes arc{to{stroke-dasharray:var(--d)}}
+</style>
+<rect x="0.5" y="0.5" rx="10" width="849" height="209" fill="#1a1b27" stroke="#414868" stroke-opacity=".6"/>
+<text x="25" y="33" class="title">LeetCode · Ambar_Gupta</text>
+<text x="825" y="33" text-anchor="end" class="lbl" style="font-size:12px">profile rank <tspan class="val" style="font-size:12px">#21,488</tspan></text>
+<g transform="translate(100 122)">
+  <circle r="58" stroke="#24283b" stroke-width="9" fill="none"/><circle r="58" stroke="#38bdae" stroke-width="9" stroke-linecap="round" fill="none" transform="rotate(-90)"
+        stroke-dasharray="0 364.424747816416" style="--d:79.7 364.4;--o:0.0;stroke-dashoffset:0.0;animation:arc 1s ease-out 300ms forwards"/><circle r="58" stroke="#e0af68" stroke-width="9" stroke-linecap="round" fill="none" transform="rotate(-90)"
+        stroke-dasharray="0 364.424747816416" style="--d:207.7 364.4;--o:-85.7;stroke-dashoffset:-85.7;animation:arc 1s ease-out 550ms forwards"/><circle r="58" stroke="#f7768e" stroke-width="9" stroke-linecap="round" fill="none" transform="rotate(-90)"
+        stroke-dasharray="0 364.424747816416" style="--d:58.9 364.4;--o:-299.5;stroke-dashoffset:-299.5;animation:arc 1s ease-out 800ms forwards"/>
+  <text y="6" text-anchor="middle" style="font-size:30px;font-weight:800;fill:#c0caf5">1156</text>
+  <text y="26" text-anchor="middle" class="lbl" style="font-size:12px">solved</text>
+</g>
+<g class="fade" style="animation-delay:200ms">
+  <text x="200" y="70" class="lbl" style="font-size:13px;fill:#38bdae;font-weight:600">Easy</text>
+  <text x="460" y="70" text-anchor="end" class="val">272<tspan class="dim" style="font-weight:400"> / 969</tspan></text>
+  <rect x="200" y="79" width="260" height="7" rx="3.5" fill="#24283b"/>
+  <rect x="200" y="79" width="73.0" height="7" rx="3.5" fill="#38bdae"/></g><g class="fade" style="animation-delay:350ms">
+  <text x="200" y="114" class="lbl" style="font-size:13px;fill:#e0af68;font-weight:600">Medium</text>
+  <text x="460" y="114" text-anchor="end" class="val">678<tspan class="dim" style="font-weight:400"> / 2124</tspan></text>
+  <rect x="200" y="123" width="260" height="7" rx="3.5" fill="#24283b"/>
+  <rect x="200" y="123" width="83.0" height="7" rx="3.5" fill="#e0af68"/></g><g class="fade" style="animation-delay:500ms">
+  <text x="200" y="158" class="lbl" style="font-size:13px;fill:#f7768e;font-weight:600">Hard</text>
+  <text x="460" y="158" text-anchor="end" class="val">206<tspan class="dim" style="font-weight:400"> / 980</tspan></text>
+  <rect x="200" y="167" width="260" height="7" rx="3.5" fill="#24283b"/>
+  <rect x="200" y="167" width="54.7" height="7" rx="3.5" fill="#f7768e"/></g>
+<line x1="500" x2="500" y1="58" y2="185" stroke="#24283b"/>
+<g class="fade" style="animation-delay:400ms"><text x="525" y="82" style="font-size:24px;font-weight:800;fill:#bf91f3">1,780</text><text x="525" y="102" class="lbl" style="font-size:12px">Contest rating</text></g><g class="fade" style="animation-delay:520ms"><text x="685" y="82" style="font-size:24px;font-weight:800;fill:#38bdae">9.26%</text><text x="685" y="102" class="lbl" style="font-size:12px">Top</text></g><g class="fade" style="animation-delay:640ms"><text x="525" y="146" style="font-size:24px;font-weight:800;fill:#70a5fd">80,461</text><text x="525" y="166" class="lbl" style="font-size:12px">Contest rank</text></g><g class="fade" style="animation-delay:760ms"><text x="685" y="146" style="font-size:24px;font-weight:800;fill:#ff9e64">54</text><text x="685" y="166" class="lbl" style="font-size:12px">Contests</text></g>
+</svg>
